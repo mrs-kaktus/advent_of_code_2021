@@ -35,7 +35,7 @@
 # part two
 four_digit_output = []
 all_digit_output = []
-with open('seven_segment_search.txt', 'r') as f:
+with open('additional_files/seven_segment_search.txt', 'r') as f:
     for line in f:
         list_of_strings = line.split(' | ')[0].split(' ')
         list_of_strings_four_digit = line.rstrip().split(' | ')[1].split(' ')

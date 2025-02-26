@@ -1,7 +1,7 @@
 # initial = [3,4,3,1,2]
 # print(initial)
 
-with open('lanternfish.txt', 'r') as f:
+with open('additional_files/lanternfish.txt', 'r') as f:
     initial = [int(e) for e in f.readline().rstrip().split(',')]
 print(initial)
 

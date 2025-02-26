@@ -11,7 +11,7 @@ position = {"horizontal": 0, "depth": 0}
 
 input = []
 prep_list = []
-with open("position.txt", "r") as f:
+with open("additional_files/position.txt", "r") as f:
     for line in f:
         for element in line.rstrip().split():
             prep_list = [line.rstrip().split()[0], int(line.rstrip().split()[1])]

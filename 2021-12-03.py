@@ -15,7 +15,7 @@
 # ]
 
 str_input = []
-with open("diagnostic.txt", "r") as f:
+with open("additional_files/diagnostic.txt", "r") as f:
     for line in f:
         str_input.append(str(line.rstrip()))
 print(str_input)

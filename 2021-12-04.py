@@ -36,7 +36,7 @@ import numpy as np
 
 boards = []  # hold matrixA, matrixB, ...
 board = []  # hold current matrix
-with open('bingo_boards.txt', 'r') as f:
+with open('additional_files/bingo_boards.txt', 'r') as f:
     numbers = [int(e) for e in f.readline().rstrip().split(",")]
     f.readline()
     for line in f:

@@ -26,7 +26,7 @@ def polymerization_step(template, rules_dict):
     return new_polymer
 
 rules = []
-with open('polymer_template_and_pair_rules.txt', 'r') as f:
+with open('additional_files/polymer_template_and_pair_rules.txt', 'r') as f:
     template = f.readline().rstrip()
     f.readline()
     for line in f:

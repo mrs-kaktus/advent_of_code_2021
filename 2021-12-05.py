@@ -63,7 +63,7 @@ def count_points_of_overlap(input_diagram):
 
 
 input = []
-with open('hydrothermal_vents_lines.txt', 'r') as f:
+with open('additional_files/hydrothermal_vents_lines.txt', 'r') as f:
     for row in f:
         input.append(row.rstrip())
 print(input)
