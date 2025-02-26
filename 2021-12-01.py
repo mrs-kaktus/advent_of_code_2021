@@ -1,7 +1,7 @@
 # part one
 # input = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
 input = []
-with open("measurements.txt", "r") as f:
+with open("additional_files/measurements.txt", "r") as f:
     for line in f:
         input.append(int(line.rstrip()))
 print(input)

@@ -1,6 +1,6 @@
 # crabs =[16,1,2,0,4,2,7,1,2,14]
 
-with open('the_horizontal_position_of_each_crab.txt', 'r') as f:
+with open('additional_files/the_horizontal_position_of_each_crab.txt', 'r') as f:
     crabs = [int(e) for e in f.readline().rstrip().split(',')]
 print(crabs)
 

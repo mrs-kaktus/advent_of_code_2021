@@ -61,7 +61,7 @@ def apply_algorithm_to_every_pixel(image_array, image_enhancement_algorithm):
 
 # INPUT
 image = []
-with open('trench_map.txt', 'r') as f:
+with open('additional_files/trench_map.txt', 'r') as f:
     image_enhancement_algorithm = f.readline()
     f.readline()
     for line in f:

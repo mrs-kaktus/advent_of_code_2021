@@ -18,7 +18,7 @@ import numpy as np
 # print(energy_level)
 
 energy_level = []
-with open('starting_energy_levels.txt', 'r') as f:
+with open('additional_files/starting_energy_levels.txt', 'r') as f:
     for line in f:
         energy_level.append([int(e) for e in list(line.rstrip())])
 energy_level = np.array(energy_level)
