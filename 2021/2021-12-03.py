@@ -15,7 +15,7 @@
 # ]
 
 str_input = []
-with open("additional_files/diagnostic.txt", "r") as f:
+with open('2021/additional_files/diagnostic.txt', 'r') as f:
     for line in f:
         str_input.append(str(line.rstrip()))
 print(str_input)
@@ -150,5 +150,5 @@ oxygen_generator_rating = int(oxygen_generator_rating_binary, 2)
 CO2_scrubber_rating = int(CO2_scrubber_rating_binary, 2)
 life_support_rating = oxygen_generator_rating * CO2_scrubber_rating
 
-print("Life support rating:")
+print('Life support rating:')
 print(life_support_rating)

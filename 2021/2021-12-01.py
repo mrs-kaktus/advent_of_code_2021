@@ -1,7 +1,7 @@
 # part one
 # input = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
 input = []
-with open("additional_files/measurements.txt", "r") as f:
+with open('2021/additional_files/measurements.txt', 'r') as f:
     for line in f:
         input.append(int(line.rstrip()))
 print(input)
@@ -13,7 +13,7 @@ def increase_counter(input_list):
             counter += 1
     print(counter)
 
-print("Number of increased measurements: ")
+print('Number of increased measurements: ')
 increase_counter(input)
 
 # part two
@@ -21,7 +21,7 @@ three_measurement_window = []
 for index in range(1, (len(input) - 1)):
     three_measurement_window.append(input[index - 1] + input[index] + input[index + 1])
 
-print("Number of increased three-measurements window: ")
+print('Number of increased three-measurements window: ')
 increase_counter(three_measurement_window)
 
 

@@ -11,7 +11,7 @@ position = {"horizontal": 0, "depth": 0}
 
 input = []
 prep_list = []
-with open("additional_files/position.txt", "r") as f:
+with open('2021/additional_files/position.txt', 'r') as f:
     for line in f:
         for element in line.rstrip().split():
             prep_list = [line.rstrip().split()[0], int(line.rstrip().split()[1])]
@@ -31,7 +31,7 @@ def move(direction, units, position_dict):
 for prep_list in input:
     position = move(prep_list[0], prep_list[1], position)
 
-print("Position")
+print('Position')
 for key in position:
     print(key, position[key])
 
@@ -51,6 +51,6 @@ def updated_move(direction, units, position_dict):
 for prep_list in input:
     position = updated_move(prep_list[0], prep_list[1], position)
 
-print("Updated calculation - Position:")
+print('Updated calculation - Position:')
 for key in position:
     print(key, position[key])
