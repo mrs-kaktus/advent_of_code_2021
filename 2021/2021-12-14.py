@@ -26,7 +26,7 @@ def polymerization_step(template, rules_dict):
     return new_polymer
 
 rules = []
-with open('additional_files/polymer_template_and_pair_rules.txt', 'r') as f:
+with open('2021/additional_files/polymer_template_and_pair_rules.txt', 'r') as f:
     template = f.readline().rstrip()
     f.readline()
     for line in f:
@@ -42,9 +42,7 @@ new_polymer = template[:]
 for step in range(10):
     new_polymer = polymerization_step(new_polymer, rules_dict)
     # print(new_polymer)
-print('final new_polymer')
-print(new_polymer)
-
+print(f'Final new_polymer: {new_polymer}')
 
 unique_characters = ''.join(set(new_polymer))
 print()
@@ -72,7 +70,7 @@ def polymerization_step_counter(counter_dict, last_pair, rules_dict):
 
 
 rules = []
-with open('polymer_template_and_pair_rules.txt', 'r') as f:
+with open('2021/additional_files/polymer_template_and_pair_rules.txt', 'r') as f:
     template = f.readline().rstrip()
     f.readline()
     for line in f:

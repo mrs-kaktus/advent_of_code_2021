@@ -25,7 +25,7 @@ import numpy as np
 
 dots = []
 folding = []
-with open('additional_files/transparent_paper.txt', 'r') as f:
+with open('2021/additional_files/transparent_paper.txt', 'r') as f:
     for line in f:
         if 'fold along' in line:
             folding.append(line.rstrip().split('fold along ')[1].split('='))

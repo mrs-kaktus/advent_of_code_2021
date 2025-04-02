@@ -9,7 +9,7 @@ import numpy as np
 # ]
 
 input = []
-with open('additional_files/height_map.txt', 'r') as f:
+with open('2021/additional_files/height_map.txt', 'r') as f:
     for line in f:
         input.append(line.rstrip())
 print(input)

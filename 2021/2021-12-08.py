@@ -35,7 +35,7 @@
 # part two
 four_digit_output = []
 all_digit_output = []
-with open('additional_files/seven_segment_search.txt', 'r') as f:
+with open('2021/additional_files/seven_segment_search.txt', 'r') as f:
     for line in f:
         list_of_strings = line.split(' | ')[0].split(' ')
         list_of_strings_four_digit = line.rstrip().split(' | ')[1].split(' ')
@@ -109,8 +109,7 @@ for index in range(len(all_digit_output)):
     list_of_decoded_four_digits.append(int(''.join([str(e) for e in numbers])))
     digits = {digit: "" for digit in range(10)}
 
-print("Output: ")
-print(sum(list_of_decoded_four_digits))
+print(f'Output: {sum(list_of_decoded_four_digits)}')
 
 
 
